@@ -1,0 +1,114 @@
+/* General styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #64718a, #2a5298);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff;
+}
+
+.container {
+  background: rgba(102, 104, 168, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  padding: 30px 40px;
+  width: 400px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 25px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.amount input {
+  width: calc(100% - 20px);
+  padding: 15px;
+  border: 2px solid #2a5298;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.amount input:focus {
+  border-color: #1e3c72;
+  outline: none;
+  box-shadow: 0 0 10px rgba(30, 60, 114, 0.5);
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+select {
+  margin-left: 10px;
+  padding: 12px;
+  border: 2px solid #2a5298;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: #1e3c72;
+  outline: none;
+  box-shadow: 0 0 10px rgba(30, 60, 114, 0.5);
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #2a5298, #1e3c72);
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.msg {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+/* Keyframes for animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Additional enhancements */
+input, select, button {
+  font-family: inherit;
+}

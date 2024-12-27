@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <label for="amount"><b>Enter Amount</b></label>
+                <input id="amount" value="100" type="text" placeholder="Enter amount">
+            </div>
+            <div class="dropdown">
+                <div class="form">
+                    <label for="from">From</label>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="US flag">
+                        <select id="from" name="from">
+                            <option value="USD">USD</option>
+                            <option value="EUR">EUR</option>
+                            <option value="GBP">GBP</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="to">To</label>
+                <div class="to">
+                    <img src="https://flagsapi.com/IN/flat/64.png" alt="India flag">
+                    <select id="to" name="to">
+                        <option value="INR">INR</option>
+                        <option value="JPY">JPY</option>
+                        <option value="AUD">AUD</option>
+                    </select>
+                </div>
+            </div>
+            <div class="msg">1 USD = 80 INR</div>
+            <button type="button">Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/ecfd7f0026.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
