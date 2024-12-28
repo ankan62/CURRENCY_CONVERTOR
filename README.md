@@ -29,14 +29,6 @@ This is a simple and elegant currency converter website that allows users to con
 4. Enter the amount, select the currencies, and click on "Get Exchange Rate" to see the converted amount.
 
 
-## Folder Structure
-```
-currency-converter/
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-```
 
 ## Contributing
 Feel free to contribute to the project! Open issues or submit pull requests to improve functionality or design.
